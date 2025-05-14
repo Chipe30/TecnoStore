@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TecnoStore</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>TecnoStore</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><button id="cart-button">🛒 Carrito</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Las mejores ofertas en tecnología</h2>
+      <p>Encuentra laptops, smartphones, accesorios y más a precios increíbles.</p>
+    </section>
+
+    <section class="products">
+      <h3>Productos destacados</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="imagenes/20200824120814.jpg" alt="Laptop" />
+          <h4>Laptop Gamer</h4>
+          <p>$999.99</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product-card">
+          <img src="imagenes/images.jpg" alt="Smartphone" />
+          <h4>Smartphone Pro</h4>
+          <p>$799.99</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product-card">
+          <img src="imagenes/71YhLSKH76L.jpg" alt="Auriculares" />
+          <h4>Auriculares Bluetooth</h4>
+          <p>$199.99</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TecnoStore.</p>
+    <p>&copy; Cristopher González</p>
+  </footer>
+
+  <!-- Carrito flotante lateral -->
+  <div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Carrito de Compras</h3>
+      <span id="close-cart" class="close-button">&times;</span>
+    </div>
+    <ul id="cart-items"></ul>
+  </div>
+
+  <!-- Ventana flotante de confirmación (toast) -->
+  <div id="toast" class="toast">Producto agregado al carrito</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
